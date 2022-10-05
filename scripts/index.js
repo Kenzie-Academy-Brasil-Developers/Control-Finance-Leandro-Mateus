@@ -84,7 +84,7 @@ function renderElements(values) {
     trashIcon.classList.add("trash");
 
     realSimbol.innerText = "R$"
-    money.innerText = Number(elem.value);
+    money.innerText = Number(elem.value).toFixed(2);
     trashIcon.src = "./assets/trash.svg";
 
     if (elem.categoryID === 1) {
@@ -118,7 +118,7 @@ function totalPrice(array) {
     }
   });
 
-  totalValue.innerText = Number(baseValue);
+  totalValue.innerText = Number(baseValue).toFixed(2);
 }
 
 function removeValue() {
@@ -128,7 +128,7 @@ function removeValue() {
     elem.addEventListener("click", () => {
       let liToRemove = elem.parentElement.parentElement;
       let elementIndex = liToRemove.id - 1;
-      console.log(totalValue.innerText)
+      
 console.log(liToRemove.childNodes[0].childNodes[1].innerText)
       if (liToRemove.childNodes[1].childNodes[0].innerText === "Entrada") {
         totalValue.innerText =
