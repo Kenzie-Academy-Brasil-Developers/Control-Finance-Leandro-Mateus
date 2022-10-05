@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Control Finance - Seu controle financeiro">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <link rel="stylesheet" href="./styles/inputs.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+<body>
+        <nav>
+            <img src="./assets/Control Finance.svg" alt="">
+            <button class="btnNav btnOpenModal">Registrar novo valor</button>
+        </nav>
+
+        <main> 
+            <div class="divTitleInfo">
+                <p class="pTitle">Resumo Financeiro</p>
+            <div>
+                <button id="todos" class="btnFilter">Todos</button>
+                <button id="entradas" class="btnFilter entradas">Entradas</button>
+                <button id="saidas" class="btnFilter saidas">Saídas</button>
+            </div>
+            </div>
+            
+        <div class="divTotalValues">
+            <p>Soma dos Valores</p>
+            <div class="valueString">
+
+                <p>R$</p>
+                <p class="totalValue">  0,00</p>
+            </div>
+        </div>
+
+        <section>
+
+        </section>
+
+    </main>
+        <div class="modalWrapper hidden">
+            <form class="modal container">
+                <div class="modalTitleClose">
+                    <p>Registro de valor</p>
+                    <button class="btnCloseModal">X</button>
+                </div>
+                <p class="pModalDescription">Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+                <div class="divModalInput">
+                    <p>Valor</p>
+                    <input class="inputNewValue" placeholder="R$ 0,00" type="number">
+                </div>
+                <div class="divModalMoneyType">
+                        <p>Tipo de valor: </p>
+                        <div class="modalLabels">
+                            <input class="hidden" type="radio" id="entrada" name="moneyType" value="entrada">
+                            <label class="labels labelEntrada" for="entrada">Entrada</label>
+    
+                            <input class="hidden" type="radio" id="saida" name="moneyType" value="saida">
+                            <label class="labels labelSaida" for="saida">Saída</label>
+                        </div>
+                </div>
+                <div class="divModalFooter">
+                    <button class="btnNav btnCloseModal">Cancelar</button>
+                    <button class="btnNav btnAddValue">Inserir Valor</button>
+                </div>
+            </form>
+
+        </div>
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/valuesData.js"></script>
+    <script type="module" src="./scripts/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 0.8rem;
+    color: var(--color-grey-5);
+}
+
+nav img {
+    width: 153px;
+    height: 24px;
+}
+  
+@media (min-width: 900px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 95px;
+        align-items: center;
+        background-color: var(--color-grey-5); 
+        padding: 0 20%;
+        margin-bottom: 50px;
+    }
+}

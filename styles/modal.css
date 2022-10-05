@@ -1,0 +1,137 @@
+.modalWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    background-color: var(--fixed-white);
+    width: 360px;
+    height: 400px;
+    padding: 0 15px;
+    border-radius: var(--radius-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modalTitleClose {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalTitleClose p {
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+    color: var(--color-grey-1);
+    line-height: 19px;
+}
+
+.pModalDescription {
+    color: var(--color-grey-2);
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-3);
+    line-height: 150%;
+}
+
+.divModalInput p {
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    line-height: 17px;
+    margin-bottom: 6px;
+}
+
+.divValueType {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.divValueType p {
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.divModalFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.divModalMoneyType {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}   
+
+.divModalMoneyType p {
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-2);
+    line-height: 17px;
+    margin-bottom: 6px;
+}
+
+.modalLabels {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-3);
+    font-family: var(--font-family-1);
+    font-weight: var(--font-weight-1);
+    line-height: 17px;
+    margin-bottom: 6px;
+    color: var(--color-grey-2);
+    border: 1.9px solid transparent;
+    height: 30px;
+    border-radius: var(--radius-1);
+}
+
+#entrada:checked + label {
+    border-color: var(--color-brand-2);
+}
+
+#saida:checked + label {
+    border-color: var(--color-brand-2);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .modalLabels {
+        flex-direction: row;
+        gap: 30%;
+    
+    }
+    .divModalMoneyType {
+        flex-direction: row;
+        gap: 25px;
+        align-items: center;
+    }
+    .labels {
+        width: 90px;
+    }
+}
+
+
+
+
