@@ -7,6 +7,7 @@
     font-weight: var(--font-weight-3);
     font-size: var(--font-size-3);
     border: none;
+    cursor: pointer;
 }
 
 .btnNav:hover {
@@ -21,6 +22,7 @@
     color: var(--color-grey-2);
     background-color: var(--fixed-white);
     border: 1.5px solid var(--fixed-white);
+    cursor: pointer;
 }
 
 .btnFilter:hover {
@@ -38,6 +40,7 @@
     justify-content: center;
     background-color: var(--color-grey-5);
     border: none;
+    cursor: pointer;
 }
 
 .divModalFooter button {
@@ -47,6 +50,7 @@
     font-family: var(--font-family-1);
     font-weight: var(--font-weight-1);
     height: 33px;
+    cursor: pointer;
 }
 
 .divModalFooter button:hover {
