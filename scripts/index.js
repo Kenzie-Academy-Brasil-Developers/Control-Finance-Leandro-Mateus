@@ -59,7 +59,7 @@ function renderElements(values) {
     p2.classList.add("p2");
 
     p1.innerText = "Nenhum valor cadastrado";
-    p2.innerText = "Registrar novo valor";
+    p2.innerText = "Registre um novo valor";
 
     DivOpnModal.append(p1, p2);
     sectionValues.append(DivOpnModal);
